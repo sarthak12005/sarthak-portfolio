@@ -5,12 +5,11 @@ const AboutSection = () => {
   const stats = [
     { number: "1+", label: "Years Experience", icon: Code2 },
     { number: "3+", label: "Projects Completed", icon: Rocket },
-    { number: "∞", label: "Cups of Coffee", icon: Coffee },
   ];
 
   const interests = [
     "Frontend Development",
-    "Backend Architecture", 
+    "Backend Architecture",
     "UI/UX Design",
     "Cloud Computing",
     "Open Source"
@@ -143,7 +142,7 @@ const AboutSection = () => {
                     </p>
                   </div>
                 </div>
-                
+
                 <div className="space-y-4">
                   <div className="flex justify-between items-center">
                     <span className="text-secondary-600 dark:text-secondary-400">Frontend</span>
@@ -158,7 +157,7 @@ const AboutSection = () => {
                     </div>
                     <span className="text-sm font-medium text-secondary-700 dark:text-secondary-300">90%</span>
                   </div>
-                  
+
                   <div className="flex justify-between items-center">
                     <span className="text-secondary-600 dark:text-secondary-400">Backend</span>
                     <div className="flex-1 mx-4 bg-secondary-200 dark:bg-secondary-700 rounded-full h-2">
@@ -172,7 +171,7 @@ const AboutSection = () => {
                     </div>
                     <span className="text-sm font-medium text-secondary-700 dark:text-secondary-300">85%</span>
                   </div>
-                  
+
                   <div className="flex justify-between items-center">
                     <span className="text-secondary-600 dark:text-secondary-400">UI/UX</span>
                     <div className="flex-1 mx-4 bg-secondary-200 dark:bg-secondary-700 rounded-full h-2">
