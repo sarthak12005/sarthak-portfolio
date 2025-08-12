@@ -52,10 +52,10 @@ const ProjectsSection = () => {
     title: "Portfolio Website",
     description:
       "A personal portfolio website showcasing projects and skills with modern design and smooth animations.",
-    image: "/api/placeholder/400/250",
+    image: "/api/placeholder/400/25",
     technologies: ["React.js", "Tailwind CSS", "Framer Motion"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
+    githubUrl: "https://github.com/sarthak12005/sarthak-portfolio",
+    liveUrl: "https://sarth-portfolio.vercel.app/",
     featured: false,
   },
   {
@@ -67,17 +67,7 @@ const ProjectsSection = () => {
     githubUrl: "https://github.com",
     liveUrl: "https://example.com",
     featured: false,
-  },
-  {
-    title: "Chat Application",
-    description:
-      "Real-time chat application with multiple rooms, user authentication, and message history.",
-    image: "/api/placeholder/400/250",
-    technologies: ["React.js", "Socket.io", "Node.js", "MongoDB"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
-    featured: false,
-  },
+  }
 ];
 
 
