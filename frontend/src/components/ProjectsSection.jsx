@@ -159,10 +159,11 @@ const ProjectsSection = () => {
                     <div className="relative">
                       <div className="w-full h-80 bg-gradient-to-br from-primary-100 to-accent-100 dark:from-primary-900/30 dark:to-accent-900/30 flex items-center justify-center">
                         <div className="text-center">
-                          <Eye size={64} className="text-primary-400 mx-auto mb-4" />
+{/*                           <Eye size={64} className="text-primary-400 mx-auto mb-4" />
                           <p className="text-secondary-600 dark:text-secondary-400 font-medium">
                             Project Preview
-                          </p>
+                          </p> */}
+                         <img src={project.image} alt="project image" className="object-center object-cover w-full h-full"/>
                         </div>
                       </div>
 
