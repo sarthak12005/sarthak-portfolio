@@ -39,13 +39,13 @@ const ProjectsSection = () => {
     featured: true,
   },
   {
-    title: "Weather Dashboard",
+    title: "Shoes Shop",
     description:
-      "A responsive weather application that displays current weather conditions and forecasts using external weather APIs.",
+      "A responsive recycle Shoes shop with the clean ui with html, css, and javascript",
     image: "/api/placeholder/400/250",
-    technologies: ["JavaScript", "HTML5", "CSS3", "Weather API"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
+    technologies: ["JavaScript", "HTML5", "CSS3"],
+    githubUrl: "https://github.com/sarthak12005/PLASHOE",
+    liveUrl: "https://plashoe-nine.vercel.app",
     featured: false,
   },
   {
