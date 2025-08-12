@@ -45,7 +45,7 @@ const ProjectsSection = () => {
     image: "/api/placeholder/400/250",
     technologies: ["JavaScript", "HTML5", "CSS3"],
     githubUrl: "https://github.com/sarthak12005/PLASHOE",
-    liveUrl: "https://plashoe-nine.vercel.app",
+    liveUrl: "https://plashoe-nine.vercel.app/",
     featured: false,
   },
   {
