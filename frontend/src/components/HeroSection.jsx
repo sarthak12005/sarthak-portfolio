@@ -10,7 +10,7 @@ const HeroSection = () => {
   const handleDownloadResume = () => {
     // Create a link to download the resume
     const link = document.createElement('a');
-    link.href = '/resume.pdf'; // Assuming resume.pdf is in the public folder
+    link.href = '/Sarthak_Joshi.pdf'; // Assuming resume.pdf is in the public folder
     link.download = 'Sarthak_Resume.pdf';
     link.click();
   };
