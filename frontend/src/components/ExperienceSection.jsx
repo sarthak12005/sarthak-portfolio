@@ -3,49 +3,44 @@ import { Calendar, MapPin, ExternalLink, Briefcase, Award } from "lucide-react";
 
 const ExperienceSection = () => {
   const experiences = [
-    {
-      title: "Full Stack Developer",
-      company: "Tech Solutions Inc.",
-      location: "Remote",
-      period: "2023 - Present",
-      description: [
-        "Developed and maintained web applications using React.js and Node.js",
-        "Collaborated with cross-functional teams to deliver high-quality software solutions",
-        "Implemented responsive designs and optimized application performance",
-        "Worked with MongoDB and Express.js to build robust backend systems",
-      ],
-      technologies: ["React.js", "Node.js", "MongoDB", "Express.js", "Tailwind CSS"],
-      current: true,
-    },
-    {
-      title: "Frontend Developer",
-      company: "Digital Agency Pro",
-      location: "New York, NY",
-      period: "2022 - 2023",
-      description: [
-        "Built responsive web applications using modern JavaScript frameworks",
-        "Collaborated with designers to implement pixel-perfect UI/UX designs",
-        "Optimized website performance and improved user experience",
-        "Maintained and updated existing client websites",
-      ],
-      technologies: ["JavaScript", "React.js", "CSS3", "HTML5", "Bootstrap"],
-      current: false,
-    },
-    {
-      title: "Web Developer Intern",
-      company: "StartUp Innovations",
-      location: "San Francisco, CA",
-      period: "2021 - 2022",
-      description: [
-        "Assisted in developing company website and internal tools",
-        "Learned modern web development practices and technologies",
-        "Participated in code reviews and team meetings",
-        "Contributed to open-source projects and documentation",
-      ],
-      technologies: ["HTML5", "CSS3", "JavaScript", "Git", "WordPress"],
-      current: false,
-    },
-  ];
+  {
+    title: "Jr. Full Stack Developer",
+    company: "PRYM Aerospace Pvt Ltd",
+    location: "Remote",
+    period: "April 2025 - Present",
+    description: [
+      "Worked on an Unmanned Traffic Management (UTM) and real-time aerospace tracking system with live data updates and optimized API performance.",
+      "Developed an Inventory Management System for tracking stock using QR code scanning, including inward/outward movement and real-time status updates.",
+      "Built an Invoice Generator application to streamline billing processes with dynamic data handling and PDF export functionality.",
+      "Designed scalable frontends using React.js and Tailwind CSS, and secure backends using Node.js, Express.js, and MongoDB.",
+      "Integrated advanced technologies including Firebase Auth, Socket.io, WebRTC, SQL, Leaflet, and GeoJSON for interactive mapping and collaboration.",
+      "Collaborated with cross-functional teams under strict industry standards for performance, security, and data integrity."
+    ],
+    technologies: [
+      "React.js", "Node.js", "Express.js", "MongoDB", "Firebase Auth",
+      "Socket.io", "WebRTC", "SQL", "Firebase", "Leaflet", "GeoJSON",
+      "HTML5", "CSS3", "JavaScript", "Git", "GitHub", "Tailwind CSS"
+    ],
+    current: true,
+  },
+  {
+    title: "Software Intern",
+    company: "PRYM Aerospace Pvt Ltd",
+    location: "Remote",
+    period: "Feb 2025 - March 2025",
+    description: [
+      "Worked on an Unmanned Traffic Management (UTM) and drone tracking system.",
+      "Handled full-stack tasks including UI development in React.js and backend APIs in Node.js, Express.js, and MongoDB.",
+      "Applied core skills in HTML, CSS, JavaScript, Git, and GitHub to meet project requirements."
+    ],
+    technologies: [
+      "React.js", "Node.js", "Express.js", "MongoDB",
+      "HTML5", "CSS3", "JavaScript", "Git", "GitHub", "Tailwind CSS"
+    ],
+    current: false,
+  }
+];
+
 
   const containerVariants = {
     hidden: { opacity: 0 },
