@@ -13,7 +13,8 @@ const SkillsSection = () => {
         { name: "TypeScript", level: 85 },
         { name: "HTML5", level: 98 },
         { name: "CSS3", level: 92 },
-        { name: "Tailwind CSS", level: 88 }
+        { name: "Tailwind CSS", level: 88 },
+        { name: "BootStrap", level: 93 }
       ],
     },
     {
@@ -26,7 +27,9 @@ const SkillsSection = () => {
         { name: "MongoDB", level: 82 },
         { name: "MySQL", level: 78 },
         { name: "REST APIs", level: 90 },
-        { name: "GraphQL", level: 75 }
+        { name: "GraphQL", level: 75 },
+        { name: "socket.io", level: 88 },
+        { name: "webRTC", level: 79 }
       ],
     },
     {
@@ -37,19 +40,20 @@ const SkillsSection = () => {
         { name: "Git & GitHub", level: 92 },
         { name: "Webpack", level: 80 },
         { name: "Vite", level: 85 },
-        { name: "Docker", level: 70 },
+        { name: "Render", level: 70 },
         { name: "AWS", level: 65 },
         { name: "Vercel", level: 88 }
+        
       ],
     },
     {
       icon: Smartphone,
-      title: "Design & Tools",
+      title: "Programming Languages",
       color: "from-pink-400 to-purple-500",
       skills: [
-        { name: "Figma", level: 85 },
-        { name: "Adobe XD", level: 78 },
-        { name: "Photoshop", level: 75 },
+        { name: "C & C++", level: 85 },
+        { name: "python", level: 78 },
+        { name: "Java", level: 75 },
         { name: "VS Code", level: 95 },
         { name: "Postman", level: 90 },
         { name: "Linux", level: 80 }
@@ -191,9 +195,9 @@ const SkillsSection = () => {
             </p>
             <div className="flex flex-wrap justify-center gap-3">
               {[
-                "Python", "Java", "C++", "PHP", "Laravel", "Vue.js", "Angular",
-                "Redux", "Next.js", "Firebase", "Supabase", "Prisma", "Heroku",
-                "Netlify", "Cloudflare", "Jest", "Cypress", "Storybook"
+                "PHP", "Laravel", "Vue.js", "Angular",
+                "Redux", "Next.js", "Firebase", "Firebase Auth", "Supabase", "Prisma", "Heroku",
+                "Netlify", "Cloudinary", "S3 buckets"
               ].map((tech, index) => (
                 <motion.span
                   key={index}
