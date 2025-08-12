@@ -162,7 +162,7 @@ const ProjectsSection = () => {
                         {project?.image ? ( <img src={project.image} alt="project image" className="object-center object-cover w-full h-full"/>) : (<><Eye size={64} className="text-primary-400 mx-auto mb-4" />
                           <p className="text-secondary-600 dark:text-secondary-400 font-medium">
                             Project Preview
-                          </p></>)
+                          </p></>)}
                         </div>
                       </div>
                         
