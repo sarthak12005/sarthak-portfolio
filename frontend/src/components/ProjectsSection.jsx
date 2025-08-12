@@ -25,7 +25,7 @@ const ProjectsSection = () => {
     title: "Inventory Management System",
     description:
       "An enterprise-grade inventory tracking system developed for my company. Allows adding items with QR codes, tracking inward and outward movement via QR scans, and managing stock efficiently.",
-    image: "/api/placeholder/400/250",
+    
     technologies: [
       "React.js",
       "Express.js",
