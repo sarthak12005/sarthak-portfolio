@@ -2,62 +2,84 @@ import { motion } from "framer-motion";
 import { ExternalLink, Github, Eye, Folder, Star } from "lucide-react";
 
 const ProjectsSection = () => {
-  const projects = [
-    {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce application built with React.js and Node.js. Features include user authentication, product catalog, shopping cart, and payment integration.",
-      image: "/api/placeholder/400/250",
-      technologies: ["React.js", "Node.js", "MongoDB", "Express.js", "Stripe API"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
-      featured: true,
-    },
-    {
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      image: "/api/placeholder/400/250",
-      technologies: ["React.js", "Socket.io", "Node.js", "MongoDB"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
-      featured: true,
-    },
-    {
-      title: "Weather Dashboard",
-      description: "A responsive weather application that displays current weather conditions and forecasts using external weather APIs.",
-      image: "/api/placeholder/400/250",
-      technologies: ["JavaScript", "HTML5", "CSS3", "Weather API"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
-      featured: false,
-    },
-    {
-      title: "Portfolio Website",
-      description: "A personal portfolio website showcasing projects and skills with modern design and smooth animations.",
-      image: "/api/placeholder/400/250",
-      technologies: ["React.js", "Tailwind CSS", "Framer Motion"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
-      featured: false,
-    },
-    {
-      title: "Blog Platform",
-      description: "A full-featured blog platform with user authentication, content management, and comment system.",
-      image: "/api/placeholder/400/250",
-      technologies: ["React.js", "Node.js", "MongoDB", "Express.js"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
-      featured: false,
-    },
-    {
-      title: "Chat Application",
-      description: "Real-time chat application with multiple rooms, user authentication, and message history.",
-      image: "/api/placeholder/400/250",
-      technologies: ["React.js", "Socket.io", "Node.js", "MongoDB"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
-      featured: false,
-    },
-  ];
+ const projects = [
+  {
+    title: "CodeCollab",
+    description:
+      "A collaborative coding platform where multiple users can solve problems together in real-time with integrated video and chat. Includes Firebase authentication and persistent code sessions.",
+    image: "/api/placeholder/400/250",
+    technologies: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "Socket.io",
+      "WebRTC",
+      "Firebase Auth",
+      "MongoDB"
+    ],
+    githubUrl: "https://github.com/sarthak12005/CodeCollab", // Replace with your actual GitHub link
+    liveUrl: "https://coderscollab.vercel.app/", // Replace with your live URL
+    featured: true,
+  },
+  {
+    title: "Inventory Management System",
+    description:
+      "An enterprise-grade inventory tracking system developed for my company. Allows adding items with QR codes, tracking inward and outward movement via QR scans, and managing stock efficiently.",
+    image: "/api/placeholder/400/250",
+    technologies: [
+      "React.js",
+      "Express.js",
+      "Node.js",
+      "MongoDB",
+      "Socket.io",
+      "WebSockets"
+    ],
+    githubUrl: "", // Replace with actual link
+    liveUrl: "https://prym-ims-inventory.vercel.app", // Replace with live URL if public
+    featured: true,
+  },
+  {
+    title: "Weather Dashboard",
+    description:
+      "A responsive weather application that displays current weather conditions and forecasts using external weather APIs.",
+    image: "/api/placeholder/400/250",
+    technologies: ["JavaScript", "HTML5", "CSS3", "Weather API"],
+    githubUrl: "https://github.com",
+    liveUrl: "https://example.com",
+    featured: false,
+  },
+  {
+    title: "Portfolio Website",
+    description:
+      "A personal portfolio website showcasing projects and skills with modern design and smooth animations.",
+    image: "/api/placeholder/400/250",
+    technologies: ["React.js", "Tailwind CSS", "Framer Motion"],
+    githubUrl: "https://github.com",
+    liveUrl: "https://example.com",
+    featured: false,
+  },
+  {
+    title: "Blog Platform",
+    description:
+      "A full-featured blog platform with user authentication, content management, and comment system.",
+    image: "/api/placeholder/400/250",
+    technologies: ["React.js", "Node.js", "MongoDB", "Express.js"],
+    githubUrl: "https://github.com",
+    liveUrl: "https://example.com",
+    featured: false,
+  },
+  {
+    title: "Chat Application",
+    description:
+      "Real-time chat application with multiple rooms, user authentication, and message history.",
+    image: "/api/placeholder/400/250",
+    technologies: ["React.js", "Socket.io", "Node.js", "MongoDB"],
+    githubUrl: "https://github.com",
+    liveUrl: "https://example.com",
+    featured: false,
+  },
+];
+
 
   const featuredProjects = projects.filter(project => project.featured);
   const otherProjects = projects.filter(project => !project.featured);
