@@ -7,7 +7,7 @@ const ProjectsSection = () => {
     title: "CodeCollab",
     description:
       "A collaborative coding platform where multiple users can solve problems together in real-time with integrated video and chat. Includes Firebase authentication and persistent code sessions.",
-    image: "/api/placeholder/400/250",
+    image: "https://res.cloudinary.com/dmhm7q4ow/image/upload/v1751304445/Screenshot_2025-06-30_225819_akz9ci.png",
     technologies: [
       "React.js",
       "Node.js",
