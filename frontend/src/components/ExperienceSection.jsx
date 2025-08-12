@@ -6,7 +6,7 @@ const ExperienceSection = () => {
   {
     title: "Jr. Full Stack Developer",
     company: "PRYM Aerospace Pvt Ltd",
-    location: "Remote",
+    location: "Jalna, Maharashtra",
     period: "April 2025 - Present",
     description: [
       "Worked on an Unmanned Traffic Management (UTM) and real-time aerospace tracking system with live data updates and optimized API performance.",
@@ -26,7 +26,7 @@ const ExperienceSection = () => {
   {
     title: "Software Intern",
     company: "PRYM Aerospace Pvt Ltd",
-    location: "Remote",
+    location: "Jalna, Maharashtra",
     period: "Feb 2025 - March 2025",
     description: [
       "Worked on an Unmanned Traffic Management (UTM) and drone tracking system.",
