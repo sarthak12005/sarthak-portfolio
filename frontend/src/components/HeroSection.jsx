@@ -15,10 +15,7 @@ const HeroSection = () => {
     link.click();
   };
 
-  const handleViewResume = () => {
-    // Open resume in new tab
-    window.open('/resume.pdf', '_blank');
-  };
+
 
   return (
     <section
@@ -148,7 +145,7 @@ const HeroSection = () => {
                 { icon: Github, href: "https://github.com", label: "GitHub" },
                 { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
                 { icon: Mail, href: "mailto:sarthak@example.com", label: "Email" }
-              ].map(({ icon: Icon, href, label }, index) => (
+              ].map(({ icon: IconComponent, href, label }, index) => (
                 <motion.a
                   key={label}
                   href={href}
@@ -161,7 +158,7 @@ const HeroSection = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.8 + index * 0.1 }}
                 >
-                  <Icon className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-600 dark:text-secondary-400 group-hover:text-primary-500 transition-colors" />
+                  <IconComponent className="w-5 h-5 sm:w-6 sm:h-6 text-secondary-600 dark:text-secondary-400 group-hover:text-primary-500 transition-colors" />
                   <span className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-xs text-secondary-500 opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
                     {label}
                   </span>

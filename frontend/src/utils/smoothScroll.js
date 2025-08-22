@@ -39,7 +39,7 @@ export const smoothScrollTo = (targetId, offset = 80) => {
         top: targetPosition,
         behavior: 'smooth'
       });
-    } catch (error) {
+    } catch {
       // Fallback to custom animation
       requestAnimationFrame(animation);
     }

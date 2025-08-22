@@ -14,14 +14,30 @@ const apiCall = async (endpoint, options = {}) => {
 
   try {
     const response = await fetch(url, config);
-    const data = await response.json();
 
+    // Check if response is ok first
     if (!response.ok) {
-      throw new Error(data.message || 'API request failed');
+      let errorMessage = 'API request failed';
+      try {
+        const errorData = await response.json();
+        errorMessage = errorData.message || errorMessage;
+      } catch {
+        // If JSON parsing fails, use status text
+        errorMessage = response.statusText || errorMessage;
+      }
+      throw new Error(errorMessage);
     }
 
+    // Parse JSON response
+    const data = await response.json();
     return data;
   } catch (error) {
+    // Handle network errors and other fetch errors
+    if (error.name === 'TypeError' && error.message.includes('fetch')) {
+      console.error('Network Error:', error);
+      throw new Error('Network error. Please check your connection and try again.');
+    }
+
     console.error('API Error:', error);
     throw error;
   }
