@@ -2,73 +2,98 @@ import { motion } from "framer-motion";
 import { ExternalLink, Github, Eye, Folder, Star } from "lucide-react";
 
 const ProjectsSection = () => {
- const projects = [
-  {
-    title: "CodeCollab",
-    description:
-      "A collaborative coding platform where multiple users can solve problems together in real-time with integrated video and chat. Includes Firebase authentication and persistent code sessions.",
-    image: "https://res.cloudinary.com/dmhm7q4ow/image/upload/v1751304445/Screenshot_2025-06-30_225819_akz9ci.png",
-    technologies: [
-      "React.js",
-      "Node.js",
-      "Express.js",
-      "Socket.io",
-      "WebRTC",
-      "Firebase Auth",
-      "MongoDB"
-    ],
-    githubUrl: "https://github.com/sarthak12005/CodeCollab", // Replace with your actual GitHub link
-    liveUrl: "https://coderscollab.vercel.app/", // Replace with your live URL
-    featured: true,
-  },
-  {
-    title: "Inventory Management System",
-    description:
-      "An enterprise-grade inventory tracking system developed for my company. Allows adding items with QR codes, tracking inward and outward movement via QR scans, and managing stock efficiently.",
-    
-    technologies: [
-      "React.js",
-      "Express.js",
-      "Node.js",
-      "MongoDB",
-      "Socket.io",
-      "WebSockets"
-    ],
-    githubUrl: "", // Replace with actual link
-    liveUrl: "https://prym-ims-inventory.vercel.app", // Replace with live URL if public
-    featured: true,
-  },
-  {
-    title: "Shoes Shop",
-    description:
-      "A responsive recycle Shoes shop with the clean ui with html, css, and javascript",
-    image: "/api/placeholder/400/250",
-    technologies: ["JavaScript", "HTML5", "CSS3"],
-    githubUrl: "https://github.com/sarthak12005/PLASHOE",
-    liveUrl: "https://plashoe-nine.vercel.app/",
-    featured: false,
-  },
-  {
-    title: "Portfolio Website",
-    description:
-      "A personal portfolio website showcasing projects and skills with modern design and smooth animations.",
-    image: "/api/placeholder/400/25",
-    technologies: ["React.js", "Tailwind CSS", "Framer Motion"],
-    githubUrl: "https://github.com/sarthak12005/sarthak-portfolio",
-    liveUrl: "https://sarth-portfolio.vercel.app/",
-    featured: false,
-  },
-  {
-    title: "Blog Platform",
-    description:
-      "A full-featured blog platform with user authentication, content management, and comment system.",
-    image: "/api/placeholder/400/250",
-    technologies: ["React.js", "Node.js", "MongoDB", "Express.js"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
-    featured: false,
-  }
-];
+  const projects = [
+    {
+      title: "CodeCollab",
+      description:
+        "A collaborative coding platform where multiple users can solve problems together in real-time with integrated video and chat. Includes Firebase authentication and persistent code sessions.",
+      image: "https://res.cloudinary.com/dmhm7q4ow/image/upload/v1751304445/Screenshot_2025-06-30_225819_akz9ci.png",
+      technologies: [
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "Socket.io",
+        "WebRTC",
+        "Firebase Auth",
+        "MongoDB"
+      ],
+      githubUrl: "https://github.com/sarthak12005/CodeCollab", // Replace with your actual GitHub link
+      liveUrl: "https://coderscollab.vercel.app/", // Replace with your live URL
+      featured: true,
+    },
+    {
+      title: "Inventory Management System",
+      description:
+        "An enterprise-grade inventory tracking system developed for my company. Allows adding items with QR codes, tracking inward and outward movement via QR scans, and managing stock efficiently.",
+
+      technologies: [
+        "React.js",
+        "Express.js",
+        "Node.js",
+        "MongoDB",
+        "Socket.io",
+        "WebSockets"
+      ],
+      githubUrl: "", // Replace with actual link
+      liveUrl: "https://prym-ims-inventory.vercel.app", // Replace with live URL if public
+      featured: false,
+    },
+    {
+      title: "PLASHOE — Online Shoe Store",
+      description:
+        "A modern and responsive e-commerce website for a shoe store, designed with a clean and minimal UI. Built using HTML, CSS, and JavaScript, it features smooth navigation, interactive product displays, and a mobile-friendly layout. The project focuses on providing an intuitive shopping experience with attention to design aesthetics and usability.",
+      image: "/api/placeholder/400/250",
+      technologies: ["JavaScript", "HTML5", "CSS3"],
+      githubUrl: "https://github.com/sarthak12005/PLASHOE",
+      liveUrl: "https://plashoe-nine.vercel.app/",
+      featured: false,
+    }
+    ,
+    {
+      title: "Portfolio Website",
+      description:
+        "A personal portfolio website showcasing projects and skills with modern design and smooth animations.",
+      image: "https://res.cloudinary.com/dmhm7q4ow/image/upload/v1755961541/Screenshot_2025-08-23_203738_b0zg2n.png",
+      technologies: ["React.js", "Tailwind CSS", "Framer Motion"],
+      githubUrl: "https://github.com/sarthak12005/sarthak-portfolio",
+      liveUrl: "https://sarth-portfolio.vercel.app/",
+      featured: false,
+    },
+    {
+      title: "Streamify",
+      description:
+        "A real-time social learning app where users add friends, join language-specific rooms, and practice via live chat and 1:1 or group video calls. Built on Stream for reliable messaging, presence, typing indicators, read receipts, and low-latency video. Includes JWT auth, profile pages, friend requests, conversation history, and per-conversation privacy controls. Fully responsive UI and production-grade error handling/logging.",
+      image: "https://res.cloudinary.com/dmhm7q4ow/image/upload/v1755961486/Screenshot_2025-08-23_203310_zbunrq.png",
+      technologies: [
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Stream Chat",
+        "Stream Video"
+      ],
+      githubUrl: "https://github.com/sarthak12005/streamify",
+      liveUrl: "https://streamify-chat-app-44ch.onrender.com",
+      featured: true,
+    },
+    {
+      title: "PFM — Personal Finance Manager",
+      description:
+        "A full-stack personal finance management app that helps users track expenses, manage income, and set budgets with ease. Built using the MERN stack, it provides secure authentication, real-time updates, and data persistence. Interactive charts and icons powered by Lucide React offer clear visual insights into spending patterns, savings goals, and financial trends. The responsive UI ensures a smooth experience across all devices.",
+      image: "/api/placeholder/400/250",
+      technologies: [
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Lucide React"
+      ],
+      githubUrl: "https://github.com/sarthak12005/PFM", // add your repo link here
+      liveUrl: "",   // add your deployed link here
+      featured: false,
+    }
+
+  ];
 
 
   const featuredProjects = projects.filter(project => project.featured);
@@ -135,9 +160,8 @@ const ProjectsSection = () => {
             <motion.div
               key={index}
               variants={itemVariants}
-              className={`flex flex-col lg:flex-row items-center gap-8 sm:gap-12 lg:gap-16 ${
-                index % 2 === 1 ? "lg:flex-row-reverse" : ""
-              }`}
+              className={`flex flex-col lg:flex-row items-center gap-8 sm:gap-12 lg:gap-16 ${index % 2 === 1 ? "lg:flex-row-reverse" : ""
+                }`}
             >
               <div className="lg:w-1/2">
                 <motion.div
@@ -149,13 +173,13 @@ const ProjectsSection = () => {
                     <div className="relative">
                       <div className="w-full h-80 bg-gradient-to-br from-primary-100 to-accent-100 dark:from-primary-900/30 dark:to-accent-900/30 flex items-center justify-center">
                         <div className="text-center">
-                        {project?.image ? ( <img src={project.image} alt="project image" className="object-center object-cover w-full h-full"/>) : (<><Eye size={64} className="text-primary-400 mx-auto mb-4" />
-                          <p className="text-secondary-600 dark:text-secondary-400 font-medium">
-                            Project Preview
-                          </p></>)}
+                          {project?.image ? (<img src={project.image} alt="project image" className="object-center object-cover w-full h-full" />) : (<><Eye size={64} className="text-primary-400 mx-auto mb-4" />
+                            <p className="text-secondary-600 dark:text-secondary-400 font-medium">
+                              Project Preview
+                            </p></>)}
                         </div>
                       </div>
-                        
+
                       {/* Overlay with actions */}
                       <div className="absolute inset-0 bg-gradient-to-br from-primary-500/90 to-accent-500/90 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center space-x-6">
                         <motion.a

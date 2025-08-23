@@ -4,7 +4,7 @@ import { Code2, Palette, Rocket, Users, Coffee, Heart } from "lucide-react";
 const AboutSection = () => {
   const stats = [
     { number: "1+", label: "Years Experience", icon: Code2 },
-    { number: "3+", label: "Projects Completed", icon: Rocket },
+    { number: "5+", label: "Projects Completed", icon: Rocket },
   ];
 
   const interests = [

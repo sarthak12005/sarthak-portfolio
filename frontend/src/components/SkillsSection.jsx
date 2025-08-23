@@ -27,7 +27,6 @@ const SkillsSection = () => {
         { name: "MongoDB", level: 82 },
         { name: "MySQL", level: 78 },
         { name: "REST APIs", level: 90 },
-        { name: "GraphQL", level: 75 },
         { name: "socket.io", level: 88 },
         { name: "webRTC", level: 79 }
       ],
@@ -43,7 +42,7 @@ const SkillsSection = () => {
         { name: "Render", level: 70 },
         { name: "AWS", level: 65 },
         { name: "Vercel", level: 88 }
-        
+
       ],
     },
     {
@@ -196,8 +195,9 @@ const SkillsSection = () => {
             <div className="flex flex-wrap justify-center gap-3">
               {[
                 "PHP", "Laravel", "Vue.js", "Angular",
-                "Redux", "Next.js", "Firebase", "Firebase Auth", "Supabase", "Prisma", "Heroku",
-                "Netlify", "Cloudinary", "S3 buckets"
+                "Redux", "Next.js", "Firebase", "Firebase Auth",
+                "Netlify", "Cloudinary", "S3 buckets", "tanStack", "Stream", "Stream-Chat", "lucide-react", "framer-motion", "daisy-ui", "webSocket Api",
+                "zustand", "npm", "pnpm", "Mui", "React Bits", 
               ].map((tech, index) => (
                 <motion.span
                   key={index}
