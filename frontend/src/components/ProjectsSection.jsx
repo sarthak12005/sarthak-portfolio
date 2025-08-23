@@ -86,7 +86,9 @@ const ProjectsSection = () => {
         "Node.js",
         "Express.js",
         "MongoDB",
-        "Lucide React"
+        "Lucide React",
+        "tanStack",
+        "Zustand"
       ],
       githubUrl: "https://github.com/sarthak12005/PFM", // add your repo link here
       liveUrl: "",   // add your deployed link here
