@@ -91,7 +91,18 @@ const ProjectsSection = () => {
       githubUrl: "https://github.com/sarthak12005/PFM", // add your repo link here
       liveUrl: "",   // add your deployed link here
       featured: false,
+    },
+    {
+      title: "Be-Bold — Beauty Shop Website",
+      description:
+        "A static and fully responsive beauty shop website built using pure HTML and CSS. The project emphasizes elegant design, clean typography, and a visually appealing layout that showcases products effectively. With a focus on user-friendly navigation and modern styling, it demonstrates strong front-end design skills without relying on JavaScript or frameworks.",
+      image: "/api/placeholder/400/250",
+      technologies: ["HTML5", "CSS3"],
+      githubUrl: "", // add repo link if you uploaded
+      liveUrl: "",   // add deployed link if live
+      featured: false,
     }
+
 
   ];
 
