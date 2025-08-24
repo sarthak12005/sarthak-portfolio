@@ -53,7 +53,7 @@ sarthak-portfolio/
 └── package.json            # Root package.json
 ```
 
-[![GitHub Streak](https://streak-stats.demolab.com/?sarthak12005)](https://git.io/streak-stats)
+[![GitHub Streak](https://streak-stats.demolab.com/?user=sarthak12005)](https://git.io/streak-stats)
 
 
 ## 🚀 Quick Start
