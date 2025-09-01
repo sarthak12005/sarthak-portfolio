@@ -74,20 +74,20 @@ app.use('*', (req, res) => {
 });
 
 // MongoDB connection
-const connectDB = async () => {
-  try {
-    const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/sarthak-portfolio';
-    await mongoose.connect(mongoURI);
-    console.log('MongoDB connected successfully');
-  } catch (error) {
-    console.error('MongoDB connection error:', error);
-    process.exit(1);
-  }
-};
+// const connectDB = async () => {
+//   try {
+//     const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/sarthak-portfolio';
+//     await mongoose.connect(mongoURI);
+//     console.log('MongoDB connected successfully');
+//   } catch (error) {
+//     console.error('MongoDB connection error:', error);
+//     process.exit(1);
+//   }
+// };
 
 // Start server
 const startServer = async () => {
-  await connectDB();
+  // await connectDB();
   app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
     console.log(`Environment: ${process.env.NODE_ENV || 'development'}`);

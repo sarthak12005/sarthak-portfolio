@@ -73,7 +73,7 @@ const ProjectsSection = () => {
         "Stream Video"
       ],
       githubUrl: "https://github.com/sarthak12005/streamify",
-      liveUrl: "https://streamify-chat-app-44ch.onrender.com",
+      liveUrl: "https://streamify-n1nf.onrender.com/",
       featured: true,
     },
     {

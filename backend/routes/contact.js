@@ -49,7 +49,7 @@ router.post('/', async (req, res) => {
       
       // Email to admin
       const adminMailOptions = {
-        from: process.env.EMAIL_FROM,
+        from: email,
         to: process.env.ADMIN_EMAIL,
         subject: `New Contact Form Submission: ${subject}`,
         html: `
@@ -66,7 +66,7 @@ router.post('/', async (req, res) => {
 
       // Auto-reply to sender
       const autoReplyOptions = {
-        from: process.env.EMAIL_FROM,
+        from: process.env.EMAIL_USER,
         to: email,
         subject: 'Thank you for contacting me!',
         html: `
