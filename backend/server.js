@@ -1,8 +1,7 @@
 const express = require('express');
-const mongoose = require('mongoose');
 const cors = require('cors');
 const dotenv = require('dotenv');
-
+const connectDB = require('./config/db');  // Import the DB connection function
 // Load environment variables
 dotenv.config();
 
@@ -76,6 +75,7 @@ app.use('*', (req, res) => {
 // Start server
 const startServer = async () => {
   app.listen(PORT, () => {
+    connectDB();
     console.log(`Server is running on port ${PORT}`);
     console.log(`Environment: ${process.env.NODE_ENV || 'development'}`);
   });

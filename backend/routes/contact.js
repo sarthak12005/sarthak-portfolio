@@ -4,8 +4,10 @@ const Contact = require('../models/Contact');
 const nodemailer = require('nodemailer');
 
 // Create email transporter
+
+
 const createTransporter = () => {
-  return nodemailer.createTransporter({
+  return nodemailer.createTransport({
     host: process.env.EMAIL_HOST,
     port: process.env.EMAIL_PORT,
     secure: false,
@@ -15,6 +17,7 @@ const createTransporter = () => {
     }
   });
 };
+
 
 // @route   POST /api/contact
 // @desc    Submit contact form
@@ -46,23 +49,35 @@ router.post('/', async (req, res) => {
     // Send email notification (optional)
     try {
       const transporter = createTransporter();
-      
+
       // Email to admin
       const adminMailOptions = {
-        from: email,
+        from: process.env.EMAIL_USER,
         to: process.env.ADMIN_EMAIL,
-        subject: `New Contact Form Submission: ${subject}`,
+        subject: `📩 New Contact Form Submission: ${subject}`,
         html: `
-          <h2>New Contact Form Submission</h2>
-          <p><strong>Name:</strong> ${name}</p>
-          <p><strong>Email:</strong> ${email}</p>
-          <p><strong>Subject:</strong> ${subject}</p>
-          <p><strong>Message:</strong></p>
-          <p>${message.replace(/\n/g, '<br>')}</p>
-          <hr>
-          <p><small>Submitted at: ${new Date().toLocaleString()}</small></p>
-        `
+    <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; background-color: #f4f4f4; border-radius: 8px;">
+      <h2 style="color: #333;">📬 New Contact Form Submission</h2>
+      
+      <div style="background: #ffffff; padding: 20px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Subject:</strong> ${subject}</p>
+        <p><strong>Message:</strong></p>
+        <div style="margin: 10px 0; padding: 10px; background-color: #f9f9f9; border-left: 4px solid #007BFF;">
+          ${message.replace(/\n/g, '<br>')}
+        </div>
+      </div>
+
+      <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0;" />
+
+      <p style="font-size: 0.9em; color: #666;">Submitted at: ${new Date().toLocaleString()}</p>
+
+      <p style="font-size: 0.9em; color: #666;">This is an automated notification from your portfolio website.</p>
+    </div>
+  `
       };
+
 
       // Auto-reply to sender
       const autoReplyOptions = {
@@ -103,7 +118,7 @@ router.post('/', async (req, res) => {
 
   } catch (error) {
     console.error('Contact form error:', error);
-    
+
     if (error.name === 'ValidationError') {
       const errors = Object.values(error.errors).map(err => err.message);
       return res.status(400).json({
@@ -166,7 +181,7 @@ router.get('/', async (req, res) => {
 router.put('/:id/status', async (req, res) => {
   try {
     const { status } = req.body;
-    
+
     if (!['new', 'read', 'replied'].includes(status)) {
       return res.status(400).json({
         success: false,
