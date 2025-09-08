@@ -12,7 +12,7 @@ export const smoothScrollTo = (targetId, offset = 80) => {
   const duration = Math.abs(distance) > 1000 ? 1000 : Math.abs(distance) * 0.5; // Dynamic duration
   let start = null;
 
-  console.log(`Smooth scrolling to ${targetId}, distance: ${distance}px, duration: ${duration}ms`);
+  // console.log(`Smooth scrolling to ${targetId}, distance: ${distance}px, duration: ${duration}ms`);
 
   // Easing function for smooth animation
   const easeInOutCubic = (t) => {
