@@ -187,15 +187,6 @@ const AboutSection = () => {
                   </div>
                 </div>
               </div>
-
-              {/* Floating elements */}
-              <motion.div
-                className="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-br from-accent-400 to-accent-600 rounded-2xl flex items-center justify-center shadow-lg"
-                animate={{ y: [0, -10, 0] }}
-                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-              >
-                <Code2 className="w-10 h-10 text-white" />
-              </motion.div>
             </div>
           </motion.div>
         </div>

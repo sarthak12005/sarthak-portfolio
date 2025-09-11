@@ -33,8 +33,8 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed ${scrolled ? 'top-[2%]' : 'top-0'} left-0 right-0 z-50 transition-all duration-300 ${scrolled
-        ? "glass dark:glass-dark shadow-xl border-b border-white/20 dark:border-secondary-700/50 w-[90%] sm:w-[95%] mx-auto rounded-2xl"
+      className={`fixed ${scrolled ? 'top-[1.5%]' : 'top-0'} left-0 right-0 z-50 transition-all duration-300 ${scrolled
+        ? "glass dark:glass-dark shadow-xl border-b border-white/20 dark:border-secondary-700/50 w-[90%] sm:w-[95%] p-2 mx-auto rounded-2xl"
         : "bg-transparent"
         }`}
     >

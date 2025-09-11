@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ChevronDown, Github, Linkedin, Mail, Download, Eye, Sparkles } from "lucide-react";
 import { smoothScrollTo } from "../utils/smoothScroll";
+const profileImage = import.meta.env.VITE_IMAGE_PATH
 
 const HeroSection = () => {
   const scrollToSection = (href) => {
@@ -142,9 +143,9 @@ const HeroSection = () => {
               transition={{ duration: 0.8, delay: 0.7 }}
             >
               {[
-                { icon: Github, href: "https://github.com", label: "GitHub" },
-                { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-                { icon: Mail, href: "mailto:sarthak@example.com", label: "Email" }
+                { icon: Github, href: "https://github.com/sarthak12005", label: "GitHub" },
+                { icon: Linkedin, href: "https://linkedin.com/in/sarthakjoshi1535", label: "LinkedIn" },
+                { icon: Mail, href: "mailto:sarthakjoshi12005@gmail.com", label: "Email" }
               ].map(({ icon: IconComponent, href, label }, index) => (
                 <motion.a
                   key={label}
@@ -188,20 +189,18 @@ const HeroSection = () => {
               />
 
               {/* Main profile container */}
-              <div className="relative w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80 xl:w-96 xl:h-96 rounded-full bg-gradient-to-br from-primary-400 via-primary-500 to-accent-500 p-1 float-animation">
+              <div className="relative w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80 xl:w-96 xl:h-96 rounded-full bg-gradient-to-br from-primary-400 via-primary-500 to-accent-500 float-animation p-1">
                 <div className="w-full h-full rounded-full bg-white dark:bg-secondary-900 flex items-center justify-center glass dark:glass-dark">
-                  <div className="w-40 h-40 sm:w-56 sm:h-56 lg:w-72 lg:h-72 xl:w-80 xl:h-80 rounded-full bg-gradient-to-br from-secondary-100 to-secondary-200 dark:from-secondary-800 dark:to-secondary-700 flex items-center justify-center overflow-hidden">
-
-                    {/* Replace 'S' with your image */}
+                  <div className="w-full h-full rounded-full bg-gradient-to-br from-secondary-100 to-secondary-200 dark:from-secondary-800 dark:to-secondary-700 flex items-center justify-center overflow-hidden">
                     <img
-                      src="/path-to-your-image.jpg"
+                      src={profileImage} // Use the imported image
                       alt="Profile"
                       className="w-full h-full object-cover rounded-full"
                     />
-
                   </div>
                 </div>
               </div>
+
 
 
               {/* Floating elements */}
