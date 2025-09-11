@@ -190,11 +190,19 @@ const HeroSection = () => {
               {/* Main profile container */}
               <div className="relative w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80 xl:w-96 xl:h-96 rounded-full bg-gradient-to-br from-primary-400 via-primary-500 to-accent-500 p-1 float-animation">
                 <div className="w-full h-full rounded-full bg-white dark:bg-secondary-900 flex items-center justify-center glass dark:glass-dark">
-                  <div className="w-40 h-40 sm:w-56 sm:h-56 lg:w-72 lg:h-72 xl:w-80 xl:h-80 rounded-full bg-gradient-to-br from-secondary-100 to-secondary-200 dark:from-secondary-800 dark:to-secondary-700 flex items-center justify-center text-4xl sm:text-6xl lg:text-7xl xl:text-8xl font-display font-bold text-gradient">
-                    S
+                  <div className="w-40 h-40 sm:w-56 sm:h-56 lg:w-72 lg:h-72 xl:w-80 xl:h-80 rounded-full bg-gradient-to-br from-secondary-100 to-secondary-200 dark:from-secondary-800 dark:to-secondary-700 flex items-center justify-center overflow-hidden">
+
+                    {/* Replace 'S' with your image */}
+                    <img
+                      src="/path-to-your-image.jpg"
+                      alt="Profile"
+                      className="w-full h-full object-cover rounded-full"
+                    />
+
                   </div>
                 </div>
               </div>
+
 
               {/* Floating elements */}
               <motion.div
@@ -218,7 +226,7 @@ const HeroSection = () => {
 
         {/* Enhanced scroll indicator */}
         <motion.div
-          className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center"
+          className="hidden lg:flex absolute top-[90%] sm:bottom-8 left-1/2 transform -translate-x-1/2 flex-col items-center "
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1 }}
